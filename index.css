@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    background-color: aliceblue;
+    /* background-image: url(cal.jpg); */
+}
+#container
+{
+    width: 1000px;
+    height: 550px;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(cal.jpg);
+    margin: 20px auto;
+}
+#calculator
+{
+    width: 320px;
+    height: 520px;
+    background-color:  #bac7d3;   
+    margin: 0  auto; 
+    top: 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result
+{
+    height: 170px;
+}
+#history
+{
+text-align: right;
+height: 50px;
+margin: 17px 50px;
+padding-top: 20px;
+font-size: 20px;
+color: #919191;
+
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+    
+}
+
+#keyboard
+{
+    height: 700px;
+}
+.opt, .number, .empty
+{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number
+{
+    background-color: #1779bb4d;
+}
+.empty
+{
+    background-color: #bac7d3; 
+}
+.number, .opt
+{
+    cursor: pointer;
+     color: brown;
+}
+.opt:active, .number:active
+{
+    font-size: 13px;
+}
+.opt:focus, .number:focus, .empty:focus
+{
+    outline: 0;
+}
+button:nth-child(4)
+{
+    font-size: 20px;
+    background-color: springgreen;
+}
+button:nth-child(8)
+{
+    font-size: 20px;
+    background-color: rgba(255, 153, 0, 0.829);
+}
+button:nth-child(12)
+{
+    font-size: 20px;
+    background-color: rgba(143, 67, 73, 0.829);
+}
+button:nth-child(16)
+{
+    font-size: 20px;
+    background-color: rgba(222, 240, 123, 0.637);
+}
+button:nth-child(20)
+{
+    font-size: 20px;
+    background-color: rgb(143, 13, 230);
+}
+@media (max-width:1200px)
+{
+    .container    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .calculator
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:600px)
+{
+.calculator {
+    grid-template-columns: repeat(1,fr);
+}
+}
+
